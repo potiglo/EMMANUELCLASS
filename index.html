@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flower Grid</title>
-  <link rel="stylesheet" href="styles.css">
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background: #f2f2f2;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Oyewole - Web Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <h1>Flower Image Grid</h1>
-  <div class="image-grid">
-    <img src="tope.jpg" alt="Orange Gerbera Daisy">
-    <img src="emmanuel.jpg" alt="Orange-Pink Rose">
-    <img src="tope.jpg" alt="White Daisy">
-    <img src="tope.jpg" alt="Red Dahlia">
-  </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <header id="about">
+        <div class="intro">
+            <h1>Emmanuel Oyewole</h1>
+            <p>Web Designer | Developer | Creative Innovator</p>
+        </div>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">UI/UX Design</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card" id="project1">
+                <img src="https://via.placeholder.com/300" alt="Project Image">
+                <h3>Project 1</h3>
+                <p>Click to see details</p>
+            </div>
+            <div class="project-card" id="project2">
+                <img src="https://via.placeholder.com/300" alt="Project Image">
+                <h3>Project 2</h3>
+                <p>Click to see details</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Project Details</h2>
+            <p>Project description and details go here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
